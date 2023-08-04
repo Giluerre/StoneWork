@@ -1,8 +1,9 @@
-package main
+package app
 
 import (
 	"errors"
 	"fmt"
+
 	"io"
 	"os"
 	"strings"

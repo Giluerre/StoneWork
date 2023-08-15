@@ -45,5 +45,7 @@ jobs:
           sudo modprobe -v vrf || echo >&2 "FAILURE"
       - name: "Build images"
         run: make images
+      - name: Debugging with tmate
+        uses: mxschmitt/action-tmate@v3.16
       - name: "Run Tests"
         run: make test
